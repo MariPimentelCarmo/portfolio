@@ -8,32 +8,78 @@
     --cor-black: #000000;
     --cor-white: #ffffff;
 
-    --fonte-primaria: "Raleway", sans-serif;
+    --fonte-primaria: "Montserrat", sans-serif;
 }
 
+/* ESTILIZAÇÃO GERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--fonte-primaria);
+}
+
+.interface .interface__flex {
+    display: flex;
+
 }
 
 body {
     background-color: var(--cor-secundaria);
-    color: var(--cor-black);
+    color: var(--cor-white);
     font-family: var(--fonte-primaria);
     height: 100vh;
 }
 
-.cabecalho {
+/* ESTILIZALÇAO DO CABEÇALHO */
+.interface {
     max-width: 1280px;
     margin: 0 auto;
     
 }
 
-.cabecalho__logo {
-    max-width: 60px;
+.logo {
+    max-width: 50px;
 }
 
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__link {
+    color: var(--cor-white);
+    text-decoration: none;
+    padding: 0 40px;
+    display: inline-block;
+    transition: .2s;
+}
+
+.menu__link:hover {
+    transform: scale(1.05);
+    color: var(--cor-quartenaria);
+}
+
+/* ESTILIZAÇÃO DO TOPO */
+
+section.apresentacao {
+    padding: 40px 4%;
+}
+
+section.apresentacao .interface__flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo__txt p{
+    margin: 20px 0px;
+}
 
 
 

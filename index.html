@@ -4,51 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+
+    <!-- Google Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Meu Portfólio</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="assets/icone.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header class="cabecalho">
-        <img class="cabecalho__logo" src="assets/logo2.jpeg" alt="Logo">
+    <header>
+        <div class="interface">
+            <img class="logo" src="assets/logo2.jpeg" alt="Logo menina programando">
 
-        <nav class="cabecalho__menu-desktop">
-            <a class="cabecalho__menu__link" href="">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="">Skills</a>
-            <a class="cabecalho__menu__link" href="">Hobbies</a>
-            <a class="cabecalho__menu__link" href="">Formação</a>
-            <a class="cabecalho__menu__link" href="">Projetos</a>
-            <a class="cabecalho__menu__link" href="">Contato</a>
-        </nav>
+            <nav class="menu-desktop">
+                <a class="menu__link" href="">Sobre mim</a>
+                <a class="menu__link" href="">Skills</a>
+                <a class="menu__link" href="">Hobbies</a>
+                <a class="menu__link" href="">Formação</a>
+                <a class="menu__link" href="">Projetos</a>
+                <a class="menu__link" href="">Contato</a>
+            </nav>
+        </div>
+
     </header> <!-- Cabeçalho-->
 
-    <main class="apresentacao">
-        <section class="apresentacao__apresentacao">
-            <div class="aprensetacao__apresentacao__texto">
-                <h1>Olá meu nome é Mariana Carmo e contruo páginas web</h1>
-                <p>Eu sou formada em Análise e Desenvolvimento de
-                    Sistemas e Atualmente estou participando do projeto Oracle ONE na Alura.
-                </p>
-                <div class="apresentacao__apresentacao_links">
-                    <a class="apresentacao__apresentacao__links__redes"
-                        href="https://github.com/MariPimentelCarmo">Github
-                        <img src="assets/seta.png" alt="seta">
-                    </a>
-                    <a class="apresentacao__apresentacao__links__redes"
-                        href="https://www.linkedin.com/in/mariana-pimentel-frontend/">Linkedin
-                        <img src="assets/seta.png" alt="seta">
-                    </a>
-                    <a class="apresentacao__apresentacao__links__redes"
-                        href="https://www.instagram.com/mpimentelcarmo/">Instagram
-                        <img src="assets/seta.png" alt="seta">
-                    </a>
-                    <a class="apresentacao__apresentacao__links__redes" href="">Currículo
-                        <img src="assets/seta.png" alt="seta">
-                    </a>
+    <main>
+        <section class="apresentacao">
+            <div class="interface">
+                <div class="interface__flex">
+                    <div class="topo__txt">
+                        <h1>Olá meu nome é Mariana Carmo e contruo páginas web</h1>
+                        <p>Eu sou formada em Análise e Desenvolvimento de
+                            Sistemas e Atualmente estou participando do projeto Oracle ONE na Alura
+                        </p>
+
+                        <div class="topo_links">
+                            <a class="apresentacao__apresentacao__links__redes"
+                                href="https://github.com/MariPimentelCarmo">Github
+                                <img src="assets/seta.png" alt="seta">
+                            </a>
+                            <a class="apresentacao__apresentacao__links__redes"
+                                href="https://www.linkedin.com/in/mariana-pimentel-frontend/">Linkedin
+                                <img src="assets/seta.png" alt="seta">
+                            </a>
+                            <a class="apresentacao__apresentacao__links__redes"
+                                href="https://www.instagram.com/mpimentelcarmo/">Instagram
+                                <img src="assets/seta.png" alt="seta">
+                            </a>
+                            <a class="apresentacao__apresentacao__links__redes" href="">Currículo
+                                <img src="assets/seta.png" alt="seta">
+                            </a>
+                        </div>
+
+                        <div class="interface__img">
+                            <img src="assets/imagem-perfil.png" alt="Foto de Mariana">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="apresentacao__apresentacao__foto">
-                <img src="assets/imagem-perfil.png" alt="Foto de Mariana">
             </div>
         </section>
 
