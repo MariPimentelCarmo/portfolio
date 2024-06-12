@@ -11,75 +11,158 @@
     --fonte-primaria: "Montserrat", sans-serif;
 }
 
-/* ESTILIZAÇÃO GERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--fonte-primaria);
-}
-
-.interface .interface__flex {
-    display: flex;
-
-}
-
-body {
-    background-color: var(--cor-secundaria);
-    color: var(--cor-white);
-    font-family: var(--fonte-primaria);
-    height: 100vh;
-}
-
-/* ESTILIZALÇAO DO CABEÇALHO */
-.interface {
-    max-width: 1280px;
-    margin: 0 auto;
     
 }
 
-.logo {
-    max-width: 50px;
+button {
+    background-color: transparent;
+    border: 2px solid var(--cor-white);
+    color: var(--cor-white);
+    font-size: 16px;
+    cursor: pointer;
 }
 
+/*Estilos Gerais*/
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0px 2%;
+}
+
+/*Estilo do header*/
 header {
-    padding: 40px 4%;
+    background-color: var(--cor-black);
+    height: 80px;
 }
 
-header > .interface {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.logotipo, .menu-desktop {
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+    position: relative;
+    height: 100%;
 }
 
-.menu__link {
+.logotipo {
+    width: 6%;
+}
+.logotipo img {
+    width: 80%;
+    max-width: 220px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-desktop {
+    width: 94%;
+}
+
+.menu-desktop ul {
+    list-style-type: none;
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.menu-desktop ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.menu-desktop ul li a{
     color: var(--cor-white);
     text-decoration: none;
-    padding: 0 40px;
+}
+
+.menu-desktop ul li a button{
+    width: 140px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+/* ESTILO DO TOPO*/
+
+section.topo-site {
+    background-image: linear-gradient(45deg, #8D44F2, #0F0140);
+    padding: 80px 0%;
+}
+
+.txt-topo, .img-topo {
     display: inline-block;
-    transition: .2s;
+    margin-right: -4px;
+    width: 50%;
+    vertical-align: middle;
 }
 
-.menu__link:hover {
-    transform: scale(1.05);
-    color: var(--cor-quartenaria);
+.txt-topo {
+    color: var(--cor-white);
 }
 
-/* ESTILIZAÇÃO DO TOPO */
-
-section.apresentacao {
-    padding: 40px 4%;
+.txt-topo h1 {
+    font-size: 3rem;
+    line-height: 40px;
 }
 
-section.apresentacao .interface__flex {
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
+.txt-topo p {
+    font-size: 1.3rem;
+    margin: 25px 0%;
 }
 
-.topo__txt p{
-    margin: 20px 0px;
+.img-topo img {
+    width: 100%;
 }
 
+/* Skills */
+section.skills {
+    padding: 80px 0;
+}
+.skills .titulo-sessao {
+    text-align: center;
+}
 
+.skills .titulo-sessao h2 {
+    color: var(--cor-tercearia);
+    font-size: 2rem;
+    margin-bottom: 60px;
+}
 
+.skills-container {
+    width: 100%;
+    text-align: center;
+}
+
+.skills .skills-box {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1%;
+    padding: 80px 4%;
+    text-align: center;
+    border: solid 2px var(--cor-tercearia);
+    border-radius: 0 70px 30px 70px;
+    box-shadow: 10px 10px 0 var(--cor-tercearia);
+}
+
+.skills .skills-box img {
+    width: 40%;
+}
+
+/* Rodapé */
+.rodape {
+    background: var(--cor-black);
+}
+
+.rodape p {
+    text-align: center;
+    color: var(--cor-white);
+    font-size: 1.5rem;
+    padding: 20px 0;
+}
